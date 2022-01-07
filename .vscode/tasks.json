@@ -9,15 +9,18 @@
 				"--mode",
 				"encrypt",
 				"--input",
-				"audio.log",
+				"D:\\audio.log",
 				"--output",
-				"audio.log.enc",
+				"D:\\audio.log.enc",
 				"--password",
-				"abc"
+				"pppppppppppppppppppppppppppppppp"
 			],
 			"problemMatcher": [
 				"$rustc"
 			],
+			"env": {
+				"RUST_BACKTRACE": "1"
+			},
 			"label": "rust: cargo run (encrypt)",
 			"group": {
 				"kind": "build",
@@ -32,12 +35,15 @@
 				"--mode",
 				"decrypt",
 				"--input",
-				"audio.log.enc",
+				"D:\\audio.log.enc",
 				"--output",
-				"audio.log.dec",
+				"D:\\audio.log.dec",
 				"--password",
-				"abc"
+				"pppppppppppppppppppppppppppppppp"
 			],
+			"env": {
+				"RUST_BACKTRACE": "1"
+			},
 			"problemMatcher": [
 				"$rustc"
 			],
